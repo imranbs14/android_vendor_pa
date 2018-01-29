@@ -1,5 +1,4 @@
 # CAF
-add_lunch_combo pa_a6000-userdebug
 add_lunch_combo pa_bacon-userdebug
 add_lunch_combo pa_gemini-userdebug
 add_lunch_combo pa_oneplus2-userdebug
@@ -10,6 +9,9 @@ add_lunch_combo pa_robin-userdebug
 add_lunch_combo pa_trltexx-userdebug
 add_lunch_combo pa_titan-userdebug
 add_lunch_combo pa_zl1-userdebug
+
+# Lenovo
+add_lunch_combo pa_a6000-userdebug
 
 # Samsung Exynos devices
 add_lunch_combo pa_gts210ltexx-userdebug
