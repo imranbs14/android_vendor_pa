@@ -13,9 +13,12 @@
 # limitations under the License.
 
 
+# Lenovo
+    PRODUCT_MAKEFILES += \
+    $(LOCAL_DIR)/a6000/pa_a6000.mk
+
 # CAF
     PRODUCT_MAKEFILES += \
-    $(LOCAL_DIR)/a6000/pa_a6000.mk \
     $(LOCAL_DIR)/bacon/pa_bacon.mk \
     $(LOCAL_DIR)/gemini/pa_gemini.mk \
     $(LOCAL_DIR)/oneplus2/pa_oneplus2.mk \
