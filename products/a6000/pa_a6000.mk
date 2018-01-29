@@ -14,8 +14,11 @@
 
 $(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/pa/configs/common_full_phone.mk)
+# Inherit some common AOSPA stuff.
+$(call inherit-product, vendor/pa/main.mk)
+
+# must be before including AOSPA part
+TARGET_BOOTANIMATION_SIZE := 720
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
