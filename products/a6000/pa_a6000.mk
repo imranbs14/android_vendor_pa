@@ -17,6 +17,8 @@ ifeq (pa_a6000,$(TARGET_PRODUCT))
 $(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 $(call inherit-product, device/lenovo/a6000/a6000.mk)
 
+include device/qcom/common/common.mk 
+
 # Inherit some common AOSPA stuff.
 $(call inherit-product, vendor/pa/main.mk)
 
