@@ -17,8 +17,6 @@ ifeq (pa_a6000,$(TARGET_PRODUCT))
 $(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 $(call inherit-product, device/lenovo/a6000/a6000.mk)
 
-include device/qcom/common/common.mk 
-
 # must be before including AOSPA part
 TARGET_BOOTANIMATION_SIZE := 720
 
