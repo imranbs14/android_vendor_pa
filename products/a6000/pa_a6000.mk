@@ -12,6 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+ifeq (pa_a6000,$(TARGET_PRODUCT))
+
 $(call inherit-product, device/lenovo/a6000/full_a6000.mk)
 
 # Inherit some common AOSPA stuff.
@@ -35,3 +37,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="Kraft-A6000-user 5.0.2 LRX22G Kraft-A6000_S061_160727 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+endif
