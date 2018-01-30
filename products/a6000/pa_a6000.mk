@@ -19,9 +19,6 @@ $(call inherit-product, device/lenovo/a6000/a6000.mk)
 
 include device/qcom/common/common.mk 
 
-# Inherit some common AOSPA stuff.
-$(call inherit-product, vendor/pa/main.mk)
-
 # must be before including AOSPA part
 TARGET_BOOTANIMATION_SIZE := 720
 
@@ -40,4 +37,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="Kraft-A6000-user 5.0.2 LRX22G Kraft-A6000_S061_160727 release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+# Inherit some common AOSPA stuff.
+include vendor/pa/main.mk
+
 endif
